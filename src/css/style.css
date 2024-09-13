@@ -1,0 +1,105 @@
+body{
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+    font-family: 'roboto', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100vh
+}
+
+.container .text {
+    color: #fff;
+    width: 300px;
+}
+
+
+
+
+.container .text h2{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+
+
+
+
+
+.container .form {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    background-color: #fff;
+    height: 378px;
+    padding: 20px;
+    box-shadow: 0 27px 49px -25px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.container .form .input-text:not(.message){
+    width: 298px;
+    height: 35px;
+    padding-left: 10px ;
+}
+
+.container .form .input-text.message {
+    width: 298px;
+    height: 100px;
+    padding-bottom: 73px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.container .form .input-text.message::placeholder {
+    position: absolute;
+    top: 0;
+    margin-top: 3px;
+}
+
+.container .form .fixed-alert {
+    align-self: start;
+    position: absolute;
+    top: 280px;
+    right: 180px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .form .send-btn {
+    margin-top: 26px;
+    height: 42px;
+    width: 100%;
+    color: #fff;
+    background-color: #3CCC87;
+    cursor: pointer;
+}
+
+.change-color-positive {
+    border: 1px solid #00C22B;
+}
+.change-color-negative {
+    border: 1px solid #F52E2E;
+}
+
+.container .form .obligatory{
+    opacity: 0; 
+    height: 15px; 
+}
+
+.container .form .obligatory.alert {
+    opacity: 1;
+    color: #F52E2E;
+    font-size: 8px;
+
+}
+
+
