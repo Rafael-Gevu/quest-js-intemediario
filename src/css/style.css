@@ -15,24 +15,24 @@ body{
     height: 100vh
 }
 
-.container .text {
-    color: #fff;
-    width: 300px;
+@media (max-width: 762px){
+    .container{
+        flex-direction: column;
+    }
 }
 
 
 
+.container .text {
+    color: #fff;
+    width: 300px;
+}
 
 .container .text h2{
     font-size: 20px;
     font-weight: 900;
     margin-bottom: 11px;
 }
-
-
-
-
-
 
 .container .form {
     display: flex;
@@ -101,3 +101,6 @@ body{
 }
 
 
+
+
+    
